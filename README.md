@@ -61,6 +61,22 @@ pnpm tsx src/08-plan-and-execute.ts
 pnpm tsx src/09-agentic-decision.ts
 ```
 
+## Assignment: 3 Cases
+
+Three cases from the bootcamp, each built on one of the patterns above.
+
+```bash
+pnpm tsx src/case-01-billing-decision.ts
+pnpm tsx src/case-02-meeting-extract.ts
+pnpm tsx src/case-03-company-profile.ts "Astra"   # company name is an optional arg
+```
+
+| Case | Task | Pattern | File |
+| ---- | ---- | ------- | ---- |
+| 1 | Customer asks "Why was I charged twice? Fix it now." — decide what the AI should do before answering. | Agentic decision (never auto-refunds; hands off account/money issues to a human). | `src/case-01-billing-decision.ts` |
+| 2 | Turn a long meeting transcript into decisions, risks, and action items. | Extraction pipeline (structured output via Zod). | `src/case-02-meeting-extract.ts` |
+| 3 | Given a company name, return a short profile with website and industry. | Web search (Tavily) + extraction. | `src/case-03-company-profile.ts` |
+
 ## Project Structure
 
 ```text
